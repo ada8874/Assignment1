@@ -1,5 +1,3 @@
-# Assignment1
-
 # Smart Fitness Session Analyzer
 
 # Selected Option - Option A
