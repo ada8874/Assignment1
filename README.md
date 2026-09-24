@@ -13,7 +13,7 @@ session based on heart rate and activity level.
 
 ## Running Instructions:
 
-1. git clone https://github.com/ada8874/REPOSITORY.git
+1. git clone https://github.com/ada8874/Assignment1.git
 2. cd REPOSITORY
 3. python3 main.py
 
