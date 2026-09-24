@@ -1,26 +1,11 @@
-observation_data = [
-    {
-        "timestamp": 1,
-        "heart_rate": 80,
-        "skin_response": 1.8,
-        "temperature": 32.5,
-        "activity_level": 0.20,
-        "signal_quality": 0.95
-    },
-    {
-        "timestamp": 2,
-        "heart_rate": 118,
-        "skin_response": 2.5,
-        "temperature": 32.9,
-        "activity_level": 0.72,
-        "signal_quality": 0.93
-    },
-    {
-        "timestamp": 3,
-        "heart_rate": 130,
-        "skin_response": 2.8,
-        "temperature": 33.1,
-        "activity_level": 0.85,
-        "signal_quality": 0.96
-    }
-]
+from data_generator import generate_fitness_data
+
+
+# Provides reproducible sample data for the fitness analyzer
+def get_sample_data(scenario="moderate_activity"):
+    return generate_fitness_data(
+        participant_id="P001",
+        scenario=scenario,
+        seed=42,
+        number_of_windows=12
+    )
